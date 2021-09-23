@@ -1,4 +1,4 @@
-
+// 21861091 이승민
 var main = document.querySelector('.section-wrap');
 var section = document.querySelectorAll('.section-wrap section');
 var header = document.querySelector('header');

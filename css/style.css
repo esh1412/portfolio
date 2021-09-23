@@ -1,3 +1,4 @@
+/* 21861091 이승민 */
 html,body{
     width: 100%;
     height: 100vh;
@@ -6,8 +7,11 @@ html,body{
     font-family:"Noto Sans CJK KR";
   
 }
+.clear{
+    clear: both;
+}
 a{color: inherit;
-text-decoration: none;}
+}
 header{
     width: 100%;
     position: fixed;
@@ -53,16 +57,21 @@ header nav h1{
     font-weight: 600;
 }
 header #menu{
- 
+    
     height: 27vh;
     position: relative;
     font-size: 10px;
+    z-index: -99;
     
 }
 header #menu ul{
     position: absolute;
     top: 35%;
     left: 5%;
+
+}
+header #menu ul a{
+  text-decoration: none;
 
 }
 header #menu li{
@@ -73,6 +82,7 @@ header #menu li{
 }
 .hov:hover{
     color: #fa8c51;
+    
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -80,7 +90,7 @@ header #menu li{
     -o-transition: 0.5s;
 }
 
-#hide{}
+#hide a{text-decoration: none;}
 
 footer{
     width: 100%;
@@ -142,6 +152,7 @@ main section{
 .main-text{
     text-align: center;
     position:absolute;
+    line-height: 30px;
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
@@ -168,9 +179,15 @@ main section{
     opacity: 30%;
 }
 .text-wrap{
-    margin-top: 30px;
+    margin-top: 50px;
     position: relative;
     font-size: 50px !important;
+    font-weight: 700;
+}
+.text-wrap2{
+    margin-top: 30px;
+    position: relative;
+    font-size: 30px !important;
     font-weight: 700;
 }
 
@@ -186,6 +203,12 @@ main section{
     font-weight: 700;
     line-height: 40px;
 }
+#section-text2{
+    
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1px;
+}
 
 
 .text-wrap .arrow{
@@ -195,7 +218,9 @@ main section{
 #sec2{
     background-color: #ffffff;
 }
-.port{font-size: 50px !important;
+.port{font-size: 50px ;
+font-weight: bold;}
+.port2{font-size: 30px ;
 font-weight: bold;}
 @keyframes ani {
     0%{
@@ -259,14 +284,17 @@ font-weight: bold;}
 }
 
 #main-contents{
-    width: 80%;
-    margin-left: 13%;
+    width: 86%;
+    margin-left: 10%;
     margin-top: 190px;
     padding-bottom: 200px;
+    
 }
 #main-contents-wrap{
     margin: auto;
     width: 90%;
+    position: relative;
+    z-index: 9999;
  
 }
 .contents-img{
@@ -274,12 +302,12 @@ font-weight: bold;}
     display: inline-block;
     margin-right: 6% ;
     margin-top: 10%;
-    
+    width: 42%;
 }
 .contents-img video{width: 100%;}
 
 .contents-img iframe{
-    wdi
+   
 }
 
 .contents-img:hover{
@@ -290,10 +318,10 @@ font-weight: bold;}
     width: 100%;
 }
 .img-hover{
-    left: 2%;
+    left: 1%;
     top: 2%;
-    width: 250px;
-    height:190px;
+    width: 100%;
+    height: 20.4vw;
     background-color: #000;
     position: absolute;
     opacity: 0;
@@ -301,7 +329,7 @@ font-weight: bold;}
 }
 .text-wrap1{
     height: 30px;
-    margin-top: 59px;
+    margin-top: 22.5%;
     font-size: 20px;
     font-weight: bold;
     line-height: 37px;
@@ -312,10 +340,11 @@ font-weight: bold;}
 
 }
 .img-wrap{
-    width: 250px;
-    height:190px;
+    width: 100%;
+    height: 20.5vw;
+    background-color: #FFF;
     overflow: hidden;
-    border: 5px solid #ffffff;
+    border: 5px solid #fff;
 }
 .text-b{
     
@@ -391,6 +420,9 @@ font-weight: bold;}
        
         
     }
+    .sid2 a{
+        text-decoration: none;
+    }
     .sid2:hover{
         background-color: #FFF;
     }
@@ -400,8 +432,99 @@ font-weight: bold;}
         transition: 0.8s;
         color: #fff
     }
+  
+    #meimg img{width: 100%;
+    opacity: 0.2;}
+    #abt{
+        margin-top: 7%;
+        font-size: 40pt;
+        line-height: 80px;
     
+       
+    }
+    #abt p a{
+        text-decoration: none;
+    }
+    #abt2{
+       
+        display: inline-block;
+        line-height: 40px;
+        width: 30%;
+        padding-top: 5vw;
+        margin-bottom: ;
     
+    }
+    
+    #abt3{
+        display: inline-block;
+        margin-right: 10% ;
+        width: 40%;
+    }
+    #abt3 img{
+        width: 100%
+    }
+    #abc1{
+        width: 100%;
+        height: 43vw;
+     
+        margin-top: 30%;
+    }
+    #fiv{
+        height: auto;
+        width: 50%;
+    
+        margin: auto;
+        margin-top: 25%;
+    }
+    #fiv img{
+        width:100%;
+       
+    }
+
+    .contents-img2{
+        width: 100%;
+        background-color: #fff;
+        margin-top: 5%;
+    }
+    .contents-img2 img{
+        width: 100%;
+    }
+
+    .slide{height:300px;overflow:hidden;position:relative; margin-top: 30%; text-align: center;}
+    .slide ul{width:calc(100% * 4);display:flex;transition:1s;}
+    .slide li{width:calc(100% / 4);height:300px;vertical-align: middle;}
+    .small{
+        font-size: 20pt;
+    }
+    .big{
+        font-size: 30pt;
+        margin-top: 50px;
+    }
+    .slide li p{
+        
+        line-height: 65px;
+    }
+    .slide li:nth-child(1){background:}
+    .slide li:nth-child(2){background:}
+    .slide li:nth-child(3){background:}
+    .slide li:nth-child(4){background:}
+    .slide input{display:none;}
+    .slide .bullet{position:absolute;bottom:20px;left:0;right:0;text-align:center;z-index:10;}
+    .slide .bullet label{width:10px;height:10px;border-radius:10px;border:2px solid #fff;display:inline-block;background:#fff;font-size:0;transition:0.5s;cursor:pointer;
+    margin: 10px;}
+    /* 슬라이드 조작 */
+    #pos1:checked ~ ul{margin-left:0;}
+    #pos2:checked ~ ul{margin-left:-100%;}
+    #pos3:checked ~ ul{margin-left:-200%;}
+    #pos4:checked ~ ul{margin-left:-300%;}
+    /* bullet 조작 */
+    #pos1:checked ~ .bullet label:nth-child(1),
+    #pos2:checked ~ .bullet label:nth-child(2),
+    #pos3:checked ~ .bullet label:nth-child(3),
+    #pos4:checked ~ .bullet label:nth-child(4){background:#f05f40;}
+
+    
+
    @media ( max-width: 960px ) {
         body {
           width: auto;
@@ -416,7 +539,70 @@ font-weight: bold;}
        }
        .ptext{
            font-size: 15px;
+          
+       }
+       .ptext2{
+           font-size: 15px;
+         
        }
        #side_menu{display: block;
+       
+    }
+    .text-wrap1{
+        margin-top: 20%;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .contents-img{
+        width: 100%;
+    }
+    .img-wrap{
+        height: 47.5vw;
+    }
+    .img-hover{
+        height: 47.5vw;
+    }
+    .text-wrap1{
+        margin-top: 25%;
+    }
+    #section-text2{
+        font-size: 40px;
+    }
+    #abc1{
+        margin-top: 60%;
+    }
+    #fiv{
+        margin-top: 120vw;
+        width: 100%;
+    }
+    #abt p{
+        font-size: 30pt;
+        margin-bottom: 10pt;
+    }
+    #abt3{
+        width: 90%;
+    }
+    .slide{
+        margin-top: 60%;
+    }
+    .slide .bullet label{
+        margin: 5px;
+    }
+    .big{
+        font-size: 19pt;
+    }
+    .small{
+        font-size: 13pt;
+    }
+    .slide li p{
+        line-height: 45px;
+    }
+    #abt2{
+        display: block;
+        width: 50%;
+    }
+    .text-wrap{
+        margin-top: 10px;
     }
 }
